@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atlas Motors — Production Hub</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+ 
+        <aside id="sidebar">
+            <div class="brand">
+                <span class="brand-mark">◆</span>
+                <span class="brand-name">Atlas Motors</span>
+            </div>
+            <p class="brand-sub">Production Hub · B-Shift</p>
+ 
+            <p class="nav-group-label">Overview</p>
+            <a href="#" id="command-link" class="nav-link active">Command Center</a>
+ 
+            <p class="nav-group-label">Production</p>
+            <a href="#" id="scoreboard-link" class="nav-link">Scoreboard</a>
+            <a href="#" id="oee-link" class="nav-link">OEE</a>
+ 
+            <p class="nav-group-label">Quality &amp; Safety</p>
+            <a href="#" class="nav-link disabled">Defect Detail</a>
+            <a href="#" class="nav-link disabled">Safety</a>
+ 
+            <p class="nav-group-label">People</p>
+            <a href="#" class="nav-link disabled">Attendance</a>
+            <a href="#" class="nav-link disabled">Crew Roll-Up</a>
+ 
+            <div class="sidebar-footer">
+                <span class="status-dot"></span>
+                Data fresh · 2 min ago
+            </div>
+        </aside>
+ 
+        <main id="content">
+ 
+            <!-- =========================================================
+                 COMMAND CENTER
+                 ========================================================= -->
+            <section id="command" class="page">
+                <header class="page-header">
+                    <div>
+                        <p class="eyebrow">Overview</p>
+                        <h1>Command Center</h1>
+                    </div>
+                    <div class="page-meta">
+                        <span>Shift 06:00–18:00</span>
+                        <span class="separator">·</span>
+                        <span>B-Shift</span>
+                    </div>
+                </header>
+ 
+                <div class="status-banner status-banner--warn">
+                    <span class="status-banner-label">Behind Target</span>
+                    <span class="status-banner-detail">Trending 8 units below pace · Crew C lagging on station 4 fitment</span>
+                </div>
+ 
+                <div class="hero-metric">
+                    <div class="hero-metric-main">
+                        <p class="metric-label">Units produced</p>
+                        <p class="metric-readout">
+                            <span class="metric-value">182</span>
+                            <span class="metric-divider">/</span>
+                            <span class="metric-target">240</span>
+                        </p>
+                        <div class="progress">
+                            <div class="progress-fill" style="width: 75.8%;"></div>
+                        </div>
+                        <p class="metric-foot">75.8% of shift target · 58 units remaining</p>
+                    </div>
+                    <div class="hero-metric-side">
+                        <p class="metric-label">Hours remaining</p>
+                        <p class="metric-readout-sm">3:42</p>
+                        <p class="metric-foot">UPH needed: 15.7</p>
+                    </div>
+                </div>
+ 
+                <div class="tile-grid">
+                    <div class="tile">
+                        <p class="tile-label">Crew attainment</p>
+                        <p class="tile-value">76%</p>
+                        <p class="tile-foot tile-foot--warn">2 of 4 crews behind</p>
+                    </div>
+                    <div class="tile">
+                        <p class="tile-label">Direct-run rate</p>
+                        <p class="tile-value">88.4%</p>
+                        <p class="tile-foot tile-foot--good">Above 85% target</p>
+                    </div>
+                    <div class="tile">
+                        <p class="tile-label">OEE</p>
+                        <p class="tile-value">61.2%</p>
+                        <p class="tile-foot">A 92 · P 81 · Q 82</p>
+                    </div>
+                    <div class="tile">
+                        <p class="tile-label">Attendance</p>
+                        <p class="tile-value">94%</p>
+                        <p class="tile-foot">17 of 18 stations staffed</p>
+                    </div>
+                    <div class="tile">
+                        <p class="tile-label">Open alerts</p>
+                        <p class="tile-value">3</p>
+                        <p class="tile-foot tile-foot--warn">1 critical · 2 watch</p>
+                    </div>
+                </div>
+ 
+                <div class="intel-block">
+                    <p class="intel-label">Shift intel · auto-summary</p>
+                    <p class="intel-body">
+                        182/240 units at <span class="intel-num">15:42</span>, tracking 8 below pace.
+                        Direct-run holding at 88.4% — fitment escapes concentrated at station 4 (Crew C, 6 of 11 today).
+                        Crew C trailing attainment at 64%, Crew A leading at 89%.
+                        Sealing line absorbed a 22-minute interruption at 13:18, recovered.
+                        Need 15.7 UPH from here to hit 240; current pace 14.1 UPH.
+                    </p>
+                </div>
+            </section>
+ 
+            <!-- =========================================================
+                 SCOREBOARD
+                 ========================================================= -->
+            <section id="scoreboard" class="page">
+                <header class="page-header">
+                    <div>
+                        <p class="eyebrow">Production</p>
+                        <h1>Scoreboard</h1>
+                    </div>
+                    <div class="page-meta">
+                        <span id="scoreboard-time">Live · updates each hour</span>
+                    </div>
+                </header>
+ 
+                <div class="scoreboard-grid">
+                    <div class="scoreboard-card">
+                        <p class="metric-label">Produced</p>
+                        <p class="metric-readout">
+                            <span class="metric-value">182</span>
+                            <span class="metric-divider">/</span>
+                            <span class="metric-target">240</span>
+                        </p>
+                        <div class="progress">
+                            <div class="progress-fill" style="width: 75.8%;"></div>
+                        </div>
+                    </div>
+                    <div class="scoreboard-card">
+                        <p class="metric-label">Current UPH</p>
+                        <p class="metric-value-lg">14.1</p>
+                        <p class="metric-foot">Target: 15.0</p>
+                    </div>
+                    <div class="scoreboard-card scoreboard-card--accent">
+                        <p class="metric-label">UPH needed to hit target</p>
+                        <p id="uph-needed" class="metric-value-lg">15.7</p>
+                        <p class="metric-foot">From now until end of shift</p>
+                    </div>
+                </div>
+ 
+                <div class="panel">
+                    <header class="panel-header">
+                        <h2>Hourly breakdown</h2>
+                        <p class="panel-sub">Output by hour · cumulative vs. target</p>
+                    </header>
+                    <table class="hour-table">
+                        <thead>
+                            <tr>
+                                <th>Hour</th>
+                                <th>Output</th>
+                                <th>Cumulative</th>
+                                <th>Target</th>
+                                <th>Delta</th>
+                                <th class="hour-bar-col">Pace</th>
+                            </tr>
+                        </thead>
+                        <tbody id="hour-table-body">
+                            <!-- rows injected by script.js -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+ 
+            <!-- =========================================================
+                 OEE
+                 ========================================================= -->
+            <section id="oee" class="page">
+                <header class="page-header">
+                    <div>
+                        <p class="eyebrow">Production</p>
+                        <h1>Overall Equipment Effectiveness</h1>
+                    </div>
+                    <div class="page-meta">
+                        <span>Three-tier calculation</span>
+                    </div>
+                </header>
+ 
+                <div class="oee-grid">
+                    <div class="oee-card">
+                        <p class="oee-tier">Tier 1</p>
+                        <p class="oee-name">Performance only</p>
+                        <p class="oee-value">88.0%</p>
+                        <p class="oee-formula">actual output ÷ theoretical output</p>
+                        <p class="oee-detail">Useful for line-only views — ignores availability and quality losses.</p>
+                    </div>
+                    <div class="oee-card">
+                        <p class="oee-tier">Tier 2</p>
+                        <p class="oee-name">Performance × quality</p>
+                        <p class="oee-value">72.2%</p>
+                        <p class="oee-formula">performance × quality</p>
+                        <p class="oee-detail">Adds first-time-through quality. Closer to true throughput.</p>
+                    </div>
+                    <div class="oee-card oee-card--primary">
+                        <p class="oee-tier">Tier 3</p>
+                        <p class="oee-name">True OEE</p>
+                        <p class="oee-value">61.2%</p>
+                        <p class="oee-formula">availability × performance × quality</p>
+                        <p class="oee-detail">The standard. Captures downtime, slow cycles, and defects together.</p>
+                    </div>
+                </div>
+ 
+                <div class="panel">
+                    <header class="panel-header">
+                        <h2>OEE calculator</h2>
+                        <p class="panel-sub">Enter your own numbers — the math runs live</p>
+                    </header>
+                    <div class="calculator">
+                        <div class="calc-fields">
+                            <label class="calc-field">
+                                <span>Planned production time (min)</span>
+                                <input id="calc-planned" type="number" value="720" min="0">
+                            </label>
+                            <label class="calc-field">
+                                <span>Downtime (min)</span>
+                                <input id="calc-downtime" type="number" value="58" min="0">
+                            </label>
+                            <label class="calc-field">
+                                <span>Ideal cycle time (sec/unit)</span>
+                                <input id="calc-ideal" type="number" value="180" min="1">
+                            </label>
+                            <label class="calc-field">
+                                <span>Total units produced</span>
+                                <input id="calc-total" type="number" value="182" min="0">
+                            </label>
+                            <label class="calc-field">
+                                <span>Good units</span>
+                                <input id="calc-good" type="number" value="161" min="0">
+                            </label>
+                            <button id="calc-run" type="button">Calculate</button>
+                        </div>
+ 
+                        <div class="calc-results">
+                            <div class="calc-result">
+                                <p class="calc-result-label">Availability</p>
+                                <p id="calc-availability" class="calc-result-value">—</p>
+                                <p class="calc-result-formula">(planned − downtime) ÷ planned</p>
+                            </div>
+                            <div class="calc-result">
+                                <p class="calc-result-label">Performance</p>
+                                <p id="calc-performance" class="calc-result-value">—</p>
+                                <p class="calc-result-formula">(ideal × units) ÷ run time</p>
+                            </div>
+                            <div class="calc-result">
+                                <p class="calc-result-label">Quality</p>
+                                <p id="calc-quality" class="calc-result-value">—</p>
+                                <p class="calc-result-formula">good units ÷ total units</p>
+                            </div>
+                            <div class="calc-result calc-result--primary">
+                                <p class="calc-result-label">OEE</p>
+                                <p id="calc-oee" class="calc-result-value">—</p>
+                                <p class="calc-result-formula">availability × performance × quality</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+ 
+        </main>
+ 
+        <p class="data-disclaimer">
+            All figures, crew names, and identifiers shown are fabricated sample data.
+            Atlas Motors is a fictional company used to demonstrate the tool's architecture.
+        </p>
+ 
+        <script src="data.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
+ 
